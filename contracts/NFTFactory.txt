@@ -1,0 +1,23 @@
+The main purpose of this Solidity smart contract is to create and manage non-fungible tokens (NFTs) on the 
+Ethereum blockchain. The contract consists of two primary contracts: MyNFT and NFTFactory.
+
+MyNFT Contract:
+This contract represents the NFT itself and inherits from the ERC721 standard, which is a widely used standard 
+for creating NFTs.
+The contract allows for the creation of NFTs with a specified name and symbol.
+It provides functionality for minting NFTs, which means creating unique tokens and assigning ownership to 
+Ethereum addresses.
+NFT owners can set the metadata (e.g., token URI) associated with their tokens.
+The contract keeps track of the total number of tokens minted with tokenIdCounter.
+The creator of the contract is able to mint new tokens.
+
+NFTFactory Contract:
+This contract serves as a factory for creating instances of the MyNFT contract.
+It is responsible for deploying new instances of the MyNFT contract with customizable names and symbols.
+When a new NFT contract is created, the factory contract mints an initial NFT and assigns ownership to the creator.
+
+The main purpose of these contracts is to enable users to create and manage their own NFT collections 
+on the Ethereum blockchain. The MyNFT contract defines the behavior of individual NFTs, while the NFTFactory 
+contract provides a streamlined way for users to create their NFT contracts with custom names and symbols. This 
+system is commonly used in decentralized applications (DApps) and marketplaces for tokenizing and trading 
+unique digital assets, such as digital art, collectibles, and more.
